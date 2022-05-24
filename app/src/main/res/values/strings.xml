@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quizle</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="course_rating">course_rating</string>
+    <string name="course_name">course_name</string>
+</resources>

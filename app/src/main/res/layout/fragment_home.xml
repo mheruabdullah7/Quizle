@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- Header -->
+    <RelativeLayout
+        android:id="@+id/homeheader"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:elevation="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quizle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/box_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeheader"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="164dp"
+        android:background="#FFFFFF"
+        android:elevation="5dp"
+        android:padding="10dp">
+
+        <!-- Button Sunting Profil -->
+
+        <Button
+            android:id="@+id/button_sunt"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/button_lihataktivitas"
+            android:backgroundTint="@color/warnabase"
+            android:text="Sunting Profil"
+            android:textSize="10dp"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/button_lihataktivitas"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/white"
+            android:text="Lihat Aktivitas"
+            android:textColor="@color/warnabase"
+            android:textSize="10dp"
+            app:cornerRadius="50dp"
+            app:strokeColor="@color/warnabase"
+            app:strokeWidth="1dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/aktivitasterbaru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/box_profil"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Aktivitas Terbaru"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/aktivitasterbaru">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

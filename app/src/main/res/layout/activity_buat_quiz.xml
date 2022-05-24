@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuatQuizActivity"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:elevation="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Buat Quiz"
+            android:textColor="@color/warnabase"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnbatalbuatquiz"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="@color/white"
+            android:text="Batal"
+            android:textColor="@color/black">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnsimpanbuatquiz"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/white"
+            android:text="Simpan"
+            android:textColor="@color/black">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/addphoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/header"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:elevation="5dp">
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/Judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addphoto"
+        android:textColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="5dp"
+        android:text="Judul"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Judul"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/inputjudul"
+        android:background="@color/white">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Masukkan Judul">
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/subjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputjudul"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        android:textColor="@color/black"
+        android:text="Sub Judul"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:layout_below="@+id/subjudul"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/inputsubjudul"
+        android:background="@color/white">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Masukkan Sub Judul">
+
+        </EditText>
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_baseline_add_24"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/inputsubjudul"
+        android:layout_marginTop="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
